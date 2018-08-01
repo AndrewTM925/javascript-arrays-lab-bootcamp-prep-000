@@ -4,4 +4,3 @@ function kittens() {
   window.kittens = kittens
   return
 }
-
