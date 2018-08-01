@@ -1,20 +1,17 @@
-function Arrays() {
-  window.kittens = ['Milo', 'Otis', 'Garfield']
-  return
-}
+var kittens = ['Milo', 'Otis', 'Garfield']
 
 function kittens() {
-  var kittens = window.kittens()
+  window.kittens = kittens
   return
 }
 
-function destructivelyAppendKitten(Ralph) {
+function destructivelyAppendKitten() {
   kittens.push(Ralph)
   window.kittens
   return
 }
 
-function destructivelyPrependKitten(Bob) {
+function destructivelyPrependKitten() {
   kittens.unshift(Bob)
   window.kittens
   return
@@ -32,10 +29,11 @@ function destructivelyRemoveFirstKitten() {
   return
 }
 
-function appendKitten(Broom) {
+function appendKitten() {
+  
+  kittens = window.kittens
+  kittens.appendKitten('Broom')
+  window.kittens
 
-  var kittens = ("Milo", "Otis", "Garfield")
-  kittens.appendKitten("Broom")
-
-  return window.kittens
+  return 
 }
