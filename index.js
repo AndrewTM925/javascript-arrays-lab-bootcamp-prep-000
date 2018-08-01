@@ -30,10 +30,10 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten() {
-  
+
   kittens = window.kittens
   kittens.appendKitten('Broom')
   window.kittens
 
-  return 
+  return
 }
