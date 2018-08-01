@@ -35,7 +35,7 @@ function destructivelyRemoveFirstKitten() {
 function appendKitten(Broom) {
 
   var kittens = ("Milo", "Otis", "Garfield")
-  kittens.unshift("Broom")
+  kittens.appendKitten("Broom")
 
   return window.kittens
 }
